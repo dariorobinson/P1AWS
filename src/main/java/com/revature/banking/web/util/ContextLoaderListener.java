@@ -67,6 +67,6 @@ public class ContextLoaderListener implements ServletContextListener {
 
     @Override
     public void contextDestroyed(ServletContextEvent sce) {
-        logger.info("Shutting down Quizzard web application!");
+        logger.info("Shutting down Banking web application!");
     }
 }
