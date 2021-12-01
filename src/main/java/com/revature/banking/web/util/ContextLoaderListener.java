@@ -34,7 +34,7 @@ public class ContextLoaderListener implements ServletContextListener {
 
         CrudORM crudORM = new CrudORM(this);
         try {
-            crudORM.createAllOfTablesWithDataSourceORM(this.getClass());
+            crudORM.createAllOfTablesWithDataSourceORM(this);
             System.out.println("Done createAllOfTablesWithDataSourceORM");
         } catch (SQLException | URISyntaxException e) {
             e.printStackTrace();
